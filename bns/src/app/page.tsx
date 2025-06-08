@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import Carousel from './_components/carousel';
+import NavBar from './_components/navBar';
 
 export default function Home() {
   return (
@@ -10,21 +11,7 @@ export default function Home() {
         <title>비엔시스템</title>
       </Head>
 
-      {/* 헤더 */}
-      <header className="bg-gray-900 text-white py-4 shadow-md">
-        <div className="container mx-auto flex justify-between items-center px-6">
-          <h1 className="text-2xl font-bold tracking-wider">Vienne</h1>
-          <nav>
-            <ul className="flex space-x-6 text-sm">
-              <li><a href="#" className="hover:text-gray-300 transition">홈</a></li>
-               <Link href="/carousel" className="hover:text-gray-300 transition">
-                캐러샐
-              </Link>
-              <li><a href="#" className="hover:text-gray-300 transition">주요실적</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      {/* 반응형 네비게이션바 */}
 
       {/* Hero 섹션 */}
       <section className="bg-gradient-to-r from-gray-800 to-gray-600 text-white py-16 px-6">
