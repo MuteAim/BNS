@@ -39,13 +39,14 @@ export default function Home() {
       {/* 본문 소개 섹션 */}
       <main className="container mx-auto py-16 px-6">
         <div className="grid md:grid-cols-2 gap-10 items-start">
-          <Image
+          <Carousel/>
+          {/* <Image
             src="/img/main.jpg"
             alt="main"
             width={600}
             height={400}
             className="rounded-xl shadow-md"
-          />
+          /> */}
 
           <div className="bg-white rounded-xl shadow-md p-6 space-y-4 text-gray-800 text-[16px] leading-relaxed tracking-wide">
             <p>
@@ -67,7 +68,7 @@ export default function Home() {
         </div>
 
         {/* 서브 이미지 */}
-        <Carousel/>
+        
       </main>
 
       {/* 푸터 */}
