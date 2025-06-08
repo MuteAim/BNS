@@ -37,17 +37,9 @@ export default function Home() {
       </section>
 
       {/* 본문 소개 섹션 */}
-      <main className="container mx-auto py-16 px-6">
+      <main className="container max-w-screen-lg mx-auto py-16 px-6 md:px-6">
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <Carousel/>
-          {/* <Image
-            src="/img/main.jpg"
-            alt="main"
-            width={600}
-            height={400}
-            className="rounded-xl shadow-md"
-          /> */}
-
           <div className="bg-white rounded-xl shadow-md p-6 space-y-4 text-gray-800 text-[16px] leading-relaxed tracking-wide">
             <p>
               2005년 소프트웨어 기반의 입체영상 플레이어 출시 이후 꾸준한 연구개발을 통해
